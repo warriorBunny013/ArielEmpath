@@ -7,6 +7,7 @@ import React, { useState, useEffect } from "react";
 
 function LoveBookingCards() {
     const [showModal, setShowModal] = useState(false);
+    // eslint-disable-next-line
     const [modalContent, setModalContent] = useState({
         title: "",
         description: "",
@@ -28,10 +29,10 @@ function LoveBookingCards() {
         };
     }, [showModal]);
 
-    const openModal = (title, description, price, cancellationPolicy, alt) => {
-        setModalContent({ title, description, price, cancellationPolicy, alt });
-        setShowModal(true);
-    };
+    // const openModal = (title, description, price, cancellationPolicy, alt) => {
+    //     setModalContent({ title, description, price, cancellationPolicy, alt });
+    //     setShowModal(true);
+    // };
 
     const closeModal = () => {
         setShowModal(false);
@@ -66,32 +67,32 @@ function LoveBookingCards() {
         }
     };
     
-    const cards = [
-        {
-            img: "Image-6.png",
-            type: "love",
-            title: "10 minutes detailed reading",
-            description: "10 minutes in-depth and honest insight regarding love-related issues like soulmates, marriage, partnerships, and more.",
-            price: "45",
-            cancellationPolicy: "Cancellations must be done at least 24 hours before your scheduled reading in order to avoid a rescheduling fee. Any last-minute cancellations and requests for rescheduling will result in a $75 rescheduling fee. Any no-show appointments result in a loss of your reading and will need to purchase another reading at full price."
-        },
-        {
-            img: "Image.png",
-            type: "love",
-            title: "30 minutes detailed reading",
-            description: "30 minutes in-depth and honest insight regarding love-related issues like soulmates, marriage, partnerships, and more.",
-            price: "120",
-            cancellationPolicy: "Cancellations must be done at least 24 hours before your scheduled reading in order to avoid a rescheduling fee. Any last-minute cancellations and requests for rescheduling will result in a $75 rescheduling fee. Any no-show appointments result in a loss of your reading and will need to purchase another reading at full price."
-        },
-        {
-            img: "Image-1.png",
-            type: "love",
-            title: "45 minutes detailed reading",
-            description: "45 minutes in-depth and honest insight regarding love-related issues like soulmates, marriage, partnerships, and more.",
-            price: "185",
-            cancellationPolicy: "Cancellations must be done at least 24 hours before your scheduled reading in order to avoid a rescheduling fee. Any last-minute cancellations and requests for rescheduling will result in a $75 rescheduling fee. Any no-show appointments result in a loss of your reading and will need to purchase another reading at full price."
-        }
-    ];
+    // const cards = [
+    //     {
+    //         img: "Image-6.png",
+    //         type: "love",
+    //         title: "10 minutes detailed reading",
+    //         description: "10 minutes in-depth and honest insight regarding love-related issues like soulmates, marriage, partnerships, and more.",
+    //         price: "45",
+    //         cancellationPolicy: "Cancellations must be done at least 24 hours before your scheduled reading in order to avoid a rescheduling fee. Any last-minute cancellations and requests for rescheduling will result in a $75 rescheduling fee. Any no-show appointments result in a loss of your reading and will need to purchase another reading at full price."
+    //     },
+    //     {
+    //         img: "Image.png",
+    //         type: "love",
+    //         title: "30 minutes detailed reading",
+    //         description: "30 minutes in-depth and honest insight regarding love-related issues like soulmates, marriage, partnerships, and more.",
+    //         price: "120",
+    //         cancellationPolicy: "Cancellations must be done at least 24 hours before your scheduled reading in order to avoid a rescheduling fee. Any last-minute cancellations and requests for rescheduling will result in a $75 rescheduling fee. Any no-show appointments result in a loss of your reading and will need to purchase another reading at full price."
+    //     },
+    //     {
+    //         img: "Image-1.png",
+    //         type: "love",
+    //         title: "45 minutes detailed reading",
+    //         description: "45 minutes in-depth and honest insight regarding love-related issues like soulmates, marriage, partnerships, and more.",
+    //         price: "185",
+    //         cancellationPolicy: "Cancellations must be done at least 24 hours before your scheduled reading in order to avoid a rescheduling fee. Any last-minute cancellations and requests for rescheduling will result in a $75 rescheduling fee. Any no-show appointments result in a loss of your reading and will need to purchase another reading at full price."
+    //     }
+    // ];
     // const makePayment = async () => {
     //     const stripe = await stripePromise;
 

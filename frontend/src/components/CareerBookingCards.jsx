@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 // import { loadStripe } from '@stripe/stripe-js';
 import { motion } from "framer-motion";
-import { API_URL } from "../utils/apiConfig";
+// import { API_URL } from "../utils/apiConfig";
 
 // const stripePromise = loadStripe(process.env.REACT_APP_API_PUBLIC_KEY);
 
@@ -9,7 +9,9 @@ function CareerBookingCards() {
    
       
     const [showModal, setShowModal] = useState(false);
+    // eslint-disable-next-line 
     const [modalContent, setModalContent] = useState({
+       
         title: "",
         description: "",
         price: "",
@@ -31,30 +33,30 @@ function CareerBookingCards() {
         };
     }, [showModal]);
 
-    const openModal = (title, description, price, cancellationPolicy, alt) => {
-        setModalContent({ title, description, price, cancellationPolicy,alt });
-        setShowModal(true);
-    };
+    // const openModal = (title, description, price, cancellationPolicy, alt) => {
+    //     setModalContent({ title, description, price, cancellationPolicy,alt });
+    //     setShowModal(true);
+    // };
 
     const closeModal = () => {
         setShowModal(false);
     };
 
-    const [prices, setPrices] = useState([]);
-    useEffect(() => {
-        // Fetch prices from the backend API
-        const fetchPrices = async () => {
-            try {
-                const response = await fetch(`${API_URL}/api/prices`);
-                const data = await response.json();
-                setPrices(data);
-            } catch (error) {
-                console.error('Error fetching prices:', error);
-            }
-        };
+    // const [prices, setPrices] = useState([]);
+    // useEffect(() => {
+    //     // Fetch prices from the backend API
+    //     const fetchPrices = async () => {
+    //         try {
+    //             const response = await fetch(`${API_URL}/api/prices`);
+    //             const data = await response.json();
+    //             setPrices(data);
+    //         } catch (error) {
+    //             console.error('Error fetching prices:', error);
+    //         }
+    //     };
 
-        fetchPrices();
-    }, []);
+    //     fetchPrices();
+    // }, []);
 
     const bookingLinks = {
         "10 minutes detailed reading": "https://calendly.com/solsticetarot143/10-minutes-detailed-reading",
@@ -70,34 +72,34 @@ function CareerBookingCards() {
             alert("Booking link not available for this duration.");
         }
     };
-    const cards = [
-        {
-            img: "Image-2.png",
-            type: "career",
-            title: "10 minutes detailed reading",
-            description: "10 minutes in-depth insight regarding career, finances, and guidance as to how to proceed moving forward.",
-            price: "45",
-            cancellationPolicy: "Cancellations must be done at least 24 hours before your scheduled reading in order to avoid a rescheduling fee. Any last-minute cancellations and requests for rescheduling will result in a $75 rescheduling fee. Any no-show appointments result in a loss of your reading and will need to purchase another reading at full price."
-        },
-        {
-            img: "Image-3.png",
-            type: "career",
-            title: "30 minutes detailed reading",
-            description: "30 minutes in-depth insight regarding career, finances, and guidance as to how to proceed moving forward.",
-            price: "120",
-            cancellationPolicy: "Cancellations must be done at least 24 hours before your scheduled reading in order to avoid a rescheduling fee. Any last-minute cancellations and requests for rescheduling will result in a $75 rescheduling fee. Any no-show appointments result in a loss of your reading and will need to purchase another reading at full price."
+    // const cards = [
+    //     {
+    //         img: "Image-2.png",
+    //         type: "career",
+    //         title: "10 minutes detailed reading",
+    //         description: "10 minutes in-depth insight regarding career, finances, and guidance as to how to proceed moving forward.",
+    //         price: "45",
+    //         cancellationPolicy: "Cancellations must be done at least 24 hours before your scheduled reading in order to avoid a rescheduling fee. Any last-minute cancellations and requests for rescheduling will result in a $75 rescheduling fee. Any no-show appointments result in a loss of your reading and will need to purchase another reading at full price."
+    //     },
+    //     {
+    //         img: "Image-3.png",
+    //         type: "career",
+    //         title: "30 minutes detailed reading",
+    //         description: "30 minutes in-depth insight regarding career, finances, and guidance as to how to proceed moving forward.",
+    //         price: "120",
+    //         cancellationPolicy: "Cancellations must be done at least 24 hours before your scheduled reading in order to avoid a rescheduling fee. Any last-minute cancellations and requests for rescheduling will result in a $75 rescheduling fee. Any no-show appointments result in a loss of your reading and will need to purchase another reading at full price."
         
-        },
-        {
-            img: "Image-4.png",
-            type: "career",
-            title: "45 minutes detailed reading",
-            description: "45 minutes in-depth insight regarding career, finances, and guidance as to how to proceed moving forward.",
-            price: "185",
-            cancellationPolicy: "Cancellations must be done at least 24 hours before your scheduled reading in order to avoid a rescheduling fee. Any last-minute cancellations and requests for rescheduling will result in a $75 rescheduling fee. Any no-show appointments result in a loss of your reading and will need to purchase another reading at full price."
+    //     },
+    //     {
+    //         img: "Image-4.png",
+    //         type: "career",
+    //         title: "45 minutes detailed reading",
+    //         description: "45 minutes in-depth insight regarding career, finances, and guidance as to how to proceed moving forward.",
+    //         price: "185",
+    //         cancellationPolicy: "Cancellations must be done at least 24 hours before your scheduled reading in order to avoid a rescheduling fee. Any last-minute cancellations and requests for rescheduling will result in a $75 rescheduling fee. Any no-show appointments result in a loss of your reading and will need to purchase another reading at full price."
         
-        }
-    ];
+    //     }
+    // ];
 
     // const makePayment = async () => {
     //     const stripe = await stripePromise;
@@ -526,6 +528,7 @@ function CareerBookingCards() {
                     <div className="fixed inset-0 z-40 bg-black opacity-50"></div>
                 </>
             )}
+            
         </div>
     );
 }

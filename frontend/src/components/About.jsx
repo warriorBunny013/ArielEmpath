@@ -1,14 +1,14 @@
-import { motion } from "framer-motion";
+// import { motion } from "framer-motion";
 
 function About(){
   
-  const handleInsta = (url) => {
-    window.open(url, "_blank");
-  };
+  // const handleInsta = (url) => {
+  //   window.open(url, "_blank");
+  // };
 
-  const handleTiktok = (url) => {
-    window.open(url, "_blank");
-  };
+  // const handleTiktok = (url) => {
+  //   window.open(url, "_blank");
+  // };
 
     return (<><div
        className='pt-40 pl-5 pr-5 lg:px-40 flex font-serif bg-[#dbe47c] pb-10 mt-20 rounded-t-full justify-center'>

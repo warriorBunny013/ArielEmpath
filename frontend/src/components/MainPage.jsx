@@ -12,6 +12,7 @@ import { motion } from "framer-motion";
 import './leaves.css';
 
 const MainPage = () => {
+  
   // const [reviews, setReviews] = useState([]);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isPopupVisible, setIsPopupVisible] = useState(false);
