@@ -2,15 +2,15 @@ import './App.css';
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import MainPage from './components/MainPage';
-import BookingSlottenminutes from './components/BookingSlottenminutes';
-import BookingSlotthirtyminutes from './components/BookingSlotthirtyminutes';
-import BookingSlotfourtyfiveminutes from './components/BookingSlotfourtyfiveminutes';
-import BookingSlotMentorship from './components/BookingSlotMentorship';
-import AdminLogin from './components/AdminLogin';
-import AdminDashboard from './components/AdminDashboard';
-import ProtectedRoute from './components/ProtectedRoute';
-import CancelPayment from './components/CancelPayment';
-import ERROR404 from './components/ERROR404';
+// import BookingSlottenminutes from './components/BookingSlottenminutes';
+// import BookingSlotthirtyminutes from './components/BookingSlotthirtyminutes';
+// import BookingSlotfourtyfiveminutes from './components/BookingSlotfourtyfiveminutes';
+// import BookingSlotMentorship from './components/BookingSlotMentorship';
+// import AdminLogin from './components/AdminLogin';
+// import AdminDashboard from './components/AdminDashboard';
+// import ProtectedRoute from './components/ProtectedRoute';
+// import CancelPayment from './components/CancelPayment';
+// import ERROR404 from './components/ERROR404';
 function App() {
   
 
