@@ -23,7 +23,7 @@ function About(){
         <img className="object-cover w-full h-66 md:h-auto md:w-[20rem]" src="ariel.jpeg" alt=""/>
         <div className="flex flex-col justify-around px-4 leading-normal">
             {/* <h5 className="mb-2 text-4xl font-bold tracking-tight text-black">About Marina</h5> */}
-            <p className="mb-3 xl:w-[80vh] pb-10 font-serif text-[0.9rem] flex md:text-lg [word-spacing:2px] text-black ">
+            <p className="mb-3 xl:w-[80vh] font-serif text-[0.9rem] flex md:text-lg [word-spacing:2px] text-black ">
               
               I'm an empath. <br/> I use tarot, oracle, clairvoyance, clairsentience, and intuitive downloads. 
               My higher calling is to provide insight to people for their journey on their life path with my inherited gifts. Born and raised in Southern California, I grew up in a metaphysical household full of plants, crystals, and incense. I come from a long line of women with the Gift and I've been called to share mine with the world!
@@ -70,7 +70,9 @@ function About(){
       
       </button>
     </div> */}
+    <div className="flex justify-end flex-wrap"><img src="sign.png" alt="sign" className="w-[15rem]"/></div>
         </div>
+        
     </div>
     
         </div></>);
