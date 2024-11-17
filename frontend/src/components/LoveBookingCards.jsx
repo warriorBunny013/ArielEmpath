@@ -66,7 +66,26 @@ function LoveBookingCards() {
             alert("Booking link not available for this duration.");
         }
     };
-    
+    const boxes = [
+        {
+          title: "Tarot Card Reading",
+          description: "Unlock insights into your life with a personalized tarot reading",
+          backgroundImage: "service1.png",
+          buttonText: "Learn More",
+        },
+        {
+          title: "Sidereal Astrology",
+          description: "Discover your true cosmic blueprint with sidereal astrology",
+          backgroundImage: "service2.png",
+          buttonText: "Learn More",
+        },
+        {
+          title: "Psychic Reading",
+          description: "Gain clarity and guidance through a powerful psychic reading",
+          backgroundImage: "service3.png",
+          buttonText: "Learn More",
+        },
+      ];
     // const cards = [
     //     {
     //         img: "Image-6.png",
@@ -129,57 +148,51 @@ function LoveBookingCards() {
     // };
     // const isFormValid = name && email && phone;
     return (
-        <div className="flex-wrap ">
+        <div className="flex flex-wrap justify-center">
             {/* <div className="mt-20 m-5 lg:ml-20 text-4xl font-bold tracking-tight text-black font-serif font-extralight flex justify-center">Services</div> */}
             <div
-                className="max-w-screen-xl mx-auto p-5 sm:p-10 md:p-8 "
+                className="flex gap-5 max-w-screen-xl mx-auto p-5 md:p-8 "
             >
-                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10">
+              
                    
-                        <div
-                          
-                            className="rounded overflow-hidden bg-white flex flex-col"
-                            initial={{ opacity: 0, x: -100 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                transition={{ duration: 1, ease: "easeInOut" }}
-                        >
-                            <div className="relative cursor-pointer">
-                                <img className="w-full" src="service1.png" alt="serviced" />
-                                {/* <div className="bg-transparent transition duration-300 absolute bottom-0 top-0 right-0 left-0"></div> */}
-                            </div>
-                           
-                            
-                        </div>
-                        <div
-                           className="rounded  overflow-hidden bg-white flex flex-col"
-                            initial={{ opacity: 0, x: -100 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                transition={{ duration: 1, ease: "easeInOut" }}
-                        >
-                            <div className="relative cursor-pointer">
-                                <img className="w-full" src="service2.png" alt="serviced" />
-                                {/* <div className="bg-transparent transition duration-300 absolute bottom-0 top-0 right-0 left-0"></div> */}
-                            </div>
-                           
-                            
-                        </div>
-                        <div
-                            
-                            className="rounded overflow-hidden bg-white flex flex-col"
-                            initial={{ opacity: 0, x: -100 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                transition={{ duration: 1, ease: "easeInOut" }}
-                        >
-                            <div className="relative cursor-pointer">
-                                <img className="w-full" src="service3.png" alt="serviced" />
-                                {/* <div className="bg-transparent transition duration-300 absolute bottom-0 top-0 right-0 left-0"></div> */}
-                            </div>
-                           
-                            
-                        </div>
+                     
+            <div className="box-container flex gap-10">
+      {boxes.map((box, index) => (
+        <div className="box-item text-black" key={index}>
+          <div className="flip-box">
+            <div className="">
+            <div
+              className="flip-box-front text-center bg-cover h-20"
+              style={{ backgroundImage: `url(${box.backgroundImage})`,  backgroundSize: "contain",
+              backgroundRepeat: "no-repeat", // Prevents tiling
+              backgroundPosition: "center", // Centers the image in the box
             
-                </div>
+            }}
+             
+            >
             </div>
+            </div>
+            
+            <div
+              className="flip-box-back text-center font-serif text-black bg-[#e7ef8f]"
+            //   style={{ backgroundColor:"#bbb"}}
+            >
+              <div className="inner color-white ">
+                <h3 className="flip-box-header text-3xl text-black">{box.title}</h3>
+                <div className="text-black mx-14 pt-5  text-[1rem]">{box.description}</div>
+                <button className="flip-box-button hover:bg-black hover:text-white hover:ease-in text-[0.8rem] duration-300"
+                onClick={() => (window.location.href = "#services")}
+                >{box.buttonText}</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      ))}
+    </div>
+            
+                
+            </div>
+
 
             {showModal && (
                 <>

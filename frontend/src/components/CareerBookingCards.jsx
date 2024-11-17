@@ -148,7 +148,7 @@ function CareerBookingCards() {
                         // whileInView={{ opacity: 1, x: 0}}
                         // transition={{ duration: 1, ease: "easeInOut" }}
                        
-                        className="rounded overflow-hidden shadow-purple-300 shadow-md bg-white flex flex-col"
+                        className="rounded overflow-hidden  shadow-md bg-white flex flex-col"
                         initial={{ opacity: 0, x: -100 }}
                          whileInView={{ opacity: 1, x: 0 }}
                         transition={{ duration: 1, ease: "easeInOut" }}
@@ -178,7 +178,7 @@ function CareerBookingCards() {
                         // whileInView={{ opacity: 1, x: 0}}
                         // transition={{ duration: 1, ease: "easeInOut" }}
                        
-                        className="rounded overflow-hidden shadow-purple-300 shadow-md  bg-white flex flex-col"
+                        className="rounded overflow-hidden  shadow-md  bg-white flex flex-col"
                         initial={{ opacity: 0, x: -100 }}
                          whileInView={{ opacity: 1, x: 0 }}
                         transition={{ duration: 1, ease: "easeInOut" }}
@@ -206,7 +206,7 @@ function CareerBookingCards() {
                         // whileInView={{ opacity: 1, x: 0}}
                         // transition={{ duration: 1, ease: "easeInOut" }}
                        
-                        className="rounded overflow-hidden shadow-purple-300 shadow-md  bg-white flex flex-col"
+                        className="rounded overflow-hidden  shadow-md  bg-white flex flex-col"
                         initial={{ opacity: 0, x: -100 }}
                          whileInView={{ opacity: 1, x: 0 }}
                         transition={{ duration: 1, ease: "easeInOut" }}
@@ -234,7 +234,7 @@ function CareerBookingCards() {
                         // whileInView={{ opacity: 1, x: 0}}
                         // transition={{ duration: 1, ease: "easeInOut" }}
                        
-                        className="rounded overflow-hidden  shadow-purple-300 shadow-md bg-white flex flex-col"
+                        className="rounded overflow-hidden  shadow-md bg-white flex flex-col"
                         initial={{ opacity: 0, x: -100 }}
                          whileInView={{ opacity: 1, x: 0 }}
                         transition={{ duration: 1, ease: "easeInOut" }}
@@ -262,7 +262,7 @@ function CareerBookingCards() {
                         // whileInView={{ opacity: 1, x: 0}}
                         // transition={{ duration: 1, ease: "easeInOut" }}
                        
-                        className="rounded overflow-hidden  shadow-purple-300 shadow-md bg-white flex flex-col"
+                        className="rounded overflow-hidden   shadow-md bg-white flex flex-col"
                         initial={{ opacity: 0, x: -100 }}
                          whileInView={{ opacity: 1, x: 0 }}
                         transition={{ duration: 1, ease: "easeInOut" }}
@@ -290,7 +290,7 @@ function CareerBookingCards() {
                         // whileInView={{ opacity: 1, x: 0}}
                         // transition={{ duration: 1, ease: "easeInOut" }}
                        
-                        className="rounded overflow-hidden shadow-purple-300 shadow-md  bg-white flex flex-col"
+                        className="rounded overflow-hidden  shadow-md  bg-white flex flex-col"
                         initial={{ opacity: 0, x: -100 }}
                          whileInView={{ opacity: 1, x: 0 }}
                         transition={{ duration: 1, ease: "easeInOut" }}
@@ -320,7 +320,7 @@ function CareerBookingCards() {
                         // whileInView={{ opacity: 1, x: 0}}
                         // transition={{ duration: 1, ease: "easeInOut" }}
                        
-                        className="rounded overflow-hidden shadow-purple-300 shadow-md bg-white flex flex-col"
+                        className="rounded overflow-hidden  shadow-md bg-white flex flex-col"
                         initial={{ opacity: 0, x: -100 }}
                          whileInView={{ opacity: 1, x: 0 }}
                         transition={{ duration: 1, ease: "easeInOut" }}
@@ -348,7 +348,7 @@ function CareerBookingCards() {
                         // whileInView={{ opacity: 1, x: 0}}
                         // transition={{ duration: 1, ease: "easeInOut" }}
                        
-                        className="rounded overflow-hidden shadow-purple-300 shadow-md bg-white flex flex-col"
+                        className="rounded overflow-hidden shadow-md bg-white flex flex-col"
                         initial={{ opacity: 0, x: -100 }}
                          whileInView={{ opacity: 1, x: 0 }}
                         transition={{ duration: 1, ease: "easeInOut" }}
@@ -376,7 +376,7 @@ function CareerBookingCards() {
                         // whileInView={{ opacity: 1, x: 0}}
                         // transition={{ duration: 1, ease: "easeInOut" }}
                        
-                        className="rounded overflow-hidden shadow-purple-300 shadow-md bg-white flex flex-col"
+                        className="rounded overflow-hidden  shadow-md bg-white flex flex-col"
                         initial={{ opacity: 0, x: -100 }}
                          whileInView={{ opacity: 1, x: 0 }}
                         transition={{ duration: 1, ease: "easeInOut" }}

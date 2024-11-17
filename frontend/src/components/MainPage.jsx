@@ -81,10 +81,8 @@ const MainPage = () => {
             </div>
 
         <div 
-          initial={{ y: -100 }}
-          animate={{ y: 0 }}
-          transition={{ delay: 1, type: "spring", stiffness: 100 }}  
-          className="flex justify-center navbar bg-[#dbe47c] lg:text-lg "
+        
+          className="flex justify-center navbar bg-[#dbe47c] pt-0 mt-0 min-h-0  lg:text-lg "
         >
           
           
@@ -119,15 +117,16 @@ const MainPage = () => {
         <i key={index}></i>
       ))}
     </div>
-     <div className="navbar-end hidden lg:flex">
+ 
+     <div className="navbar-end hidden lg:flex mr-10">
             <a href="mailto:uditi013@gmail.com" onClick={handleContactClick} className="btn border-0 text-white font-serif font-extralight">Contact me</a>
           </div>
         </div>
 
         {/* Fullscreen Slider Menu */}
-        <div className={`fixed top-0 right-0 h-full w-full transform ${isMenuOpen ? 'translate-x-0' : 'translate-x-full'} transition-transform duration-300 ease-in-out z-50`}>
+        {/* <div className={`fixed top-0 right-0 h-full w-full transform ${isMenuOpen ? 'translate-x-0' : 'translate-x-full'} transition-transform duration-300 ease-in-out z-50`}>
           <div className="flex justify-end p-4">
-            <button onClick={toggleMenu} className="text-white text-3xl">
+            <button onClick={toggleMenu} className="text-black text-3xl">
               &times;
             </button>
           </div>
@@ -136,11 +135,13 @@ const MainPage = () => {
             <li className="my-4"><a href="#services" onClick={() => navigateTo('services')} className="block py-2">Services</a></li>
             <li className="my-4"><a href="#testimonials" onClick={() => navigateTo('testimonials')} className="block py-2">Testimonials</a></li>
           </ul>
-        </div>
-
+        </div> */}
+        {/* <div className="bg-[#dbe47c] flex  justify-center md:hidden">
+              <img src='logo.png' className='w-[12rem] pb-6' alt='logo'/>
+            </div> */}
         {/* HERO SECTION STARTS FROM HERE!! */}
         <div className="container mx-auto flex flex-wrap md:flex-nowrap pl-10 pr-10 md:pt-20 justify-center bg-[#dbe47c] rounded-bl-[70rem] rounded-br-[40rem]">
-          <div className='pt-10 lg:pt-20 lg:pr-[10rem] lg:flex-col justify-center'>
+          <div className='pt-1 lg:pt-20 lg:pr-[10rem] lg:flex-col justify-center'>
             {/* <motion.div initial={{ y: 20 }}
               animate={{ y: 0 }}
               transition={{ delay: 0, type: "spring", stiffness: 100 }} 
@@ -151,14 +152,14 @@ const MainPage = () => {
             <motion.div initial={{ y: 40 }}
               animate={{ y: 0 }}
               transition={{ delay: 0.3, type: "spring", stiffness: 100 }} 
-              className='font-serif text-black font-medium text-4xl leading-10 xl:text-5xl mb-4 '
+              className='font-serif text-black mr-10 font-medium text-4xl leading-10 xl:text-5xl mb-4 '
             >
               Need <span className=' text-purple-600 rounded-top-xl'>Clarity</span> on Love <br></br>Career, or Life Choices?
             </motion.div>
             <motion.div initial={{ y: 20}}
               animate={{ y: 0 }}
               transition={{ delay: 0.6, type: "spring", stiffness: 100 }} 
-              className='mb-8 lg:w-[65vh] lg:text-lg font-serif text-slate-700'
+              className='mb-8 lg:w-[65vh] pr-10 md:pr-0 lg:text-lg font-serif text-slate-700'
             >
             Explore insights on love, career, and life decisions with Ariel's empowering consultations
             </motion.div>
@@ -205,8 +206,8 @@ const MainPage = () => {
         </div> */}
            
         <footer className="bg-[#dbe47c] pt-5 font-serif text-black">
-          <div className='w-full mx-auto max-w-screen-xl p-4 md:flex gap-3 md:items-center md:justify-between'>
-            <div className='max-w-1/2 mb-10 text-sm '>
+          <div className='w-full mx-auto max-w-screen-xl p-4 flex gap-3 items-center justify-between'>
+            <div className=' mb-10 text-sm pr-10 xl:p-0'>
               <span className='font-bold'>Legal Disclaimer: </span> 
 By purchasing a reading or chart interpretation/report, you agree that you are over the age of 18 years old.
 
@@ -221,8 +222,11 @@ All sales are final.
 Please feel free to contact me for any questions or concerns
             </div>
           </div>
+           <div className="bg-[#dbe47c] flex  justify-center md:hidden">
+              <img src='logo.png' className='w-[12rem] pb-6' alt='logo'/>
+            </div>
           <div className="w-full mx-auto max-w-screen-xl p-4 md:flex gap-3 md:items-center md:justify-between">
-          <span className="text-sm">© 2024, Ariel Baham | <span className="hover:underline">ConsultationsByAriel™</span>. All Rights Reserved.</span>
+          <span className="text-sm text-wrap">© 2024, Ariel Baham <br/> <span className="hover:underline">ConsultationsByAriel™</span>. All Rights Reserved.</span>
               <ul className="md:flex hidden text-sm md:ml-auto items-center glass-head">
                 <li><a href="#about" onClick={() => navigateTo('about')} className="hover:underline me-4 cursor-pointer md:me-6 block py-2 px-4 ">About</a></li>
                 <li><a href="mailto:uditi013@gmail.com" onClick={handleContactClick} className="hover:underline me-4 cursor-pointer md:me-6 block py-2 px-4 ">Contact</a></li>

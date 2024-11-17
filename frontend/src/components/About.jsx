@@ -17,15 +17,16 @@ function About(){
      initial={{ opacity: 0, y: 100 }}
      whileInView={{ opacity: 1, y: 0 }}
      transition={{ duration: 1, ease: "easeInOut" }}
-      className="flex flex-col gap-10 items-center md:flex-row   lg:max-w-6xl">
+      className="flex flex-col gap-5 items-center md:flex-row   lg:max-w-6xl">
         
-         <h5 className="mb-2 text-6xl font-bold tracking-tight text-black underline font-serif decoration-wavy decoration-purple-600 underline-offset-8 ">About Ariel</h5>
-        <img className="object-cover w-full h-96 md:h-auto md:w-[20rem]" src="ariel.jpeg" alt=""/>
-        <div className="flex flex-col justify-around p-4 leading-normal">
+         <h5 className="mb-2 text-4xl lg:text-6xl font-bold tracking-tight text-black underline font-serif decoration-wavy decoration-purple-600 underline-offset-8 ">About Ariel</h5>
+        <img className="object-cover w-full h-66 md:h-auto md:w-[20rem]" src="ariel.jpeg" alt=""/>
+        <div className="flex flex-col justify-around px-4 leading-normal">
             {/* <h5 className="mb-2 text-4xl font-bold tracking-tight text-black">About Marina</h5> */}
-            <p className="mb-3 xl:w-[80vh] pb-10 font-serif flex lg:text-lg [word-spacing:2px] text-black ">
+            <p className="mb-3 xl:w-[80vh] pb-10 font-serif text-[0.9rem] flex md:text-lg [word-spacing:2px] text-black ">
               
-              My name is Ariel, and I'm an empath. I use tarot, oracle, clairvoyance, clairsentience, and intuitive downloads. My higher calling is to provide insight to people for their journey on their life path with my inherited gifts. Born and raised in Southern California, I grew up in a metaphysical household full of plants, crystals, and incense. I come from a long line of women with the Gift and I've been called to share mine with the world!
+              I'm an empath. <br/> I use tarot, oracle, clairvoyance, clairsentience, and intuitive downloads. 
+              My higher calling is to provide insight to people for their journey on their life path with my inherited gifts. Born and raised in Southern California, I grew up in a metaphysical household full of plants, crystals, and incense. I come from a long line of women with the Gift and I've been called to share mine with the world!
     </p>
     {/* <div className="flex gap-2">
     <button  onClick={() => handleInsta('https://www.instagram.com/soulstice_tarot')} className="w-10 h-10 flex items-center justify-center rounded-full relative overflow-hidden  group transition-all duration-500">

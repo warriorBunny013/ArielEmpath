@@ -6,12 +6,13 @@ import "slick-carousel/slick/slick-theme.css";
 function Testimonials() {
     const settings = {
         infinite: true,
-        speed: 500,
+        speed:1000,
         slidesToShow: 3,
         slidesToScroll: 1,
         arrows: false,
         autoplay: true,
         autoplaySpeed: 1000,
+        // dots:true,
         responsive: [
             {
                 breakpoint: 1024,
@@ -19,7 +20,7 @@ function Testimonials() {
                     slidesToShow: 2,
                     slidesToScroll: 1,
                     infinite: true,
-                
+                    
                 }
             },
             {
@@ -28,7 +29,7 @@ function Testimonials() {
                     slidesToShow: 1,
                     slidesToScroll: 1,
                     infinite: true,
-                
+                    // dots:true
                 }
             }
         ]
