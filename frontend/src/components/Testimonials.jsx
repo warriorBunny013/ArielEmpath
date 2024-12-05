@@ -38,7 +38,7 @@ function Testimonials() {
     return (
         <div className="flex-wrap font-serif font-extralight">
             
-        <div className="mt-10 m-5 lg:m-20 py-5 text-4xl font-serif flex justify-center underline decoration-wavy decoration-green-500 underline-offset-8 decoration-2 tracking-tight text-black">Customer testimonials</div>
+        <div className="mt-10 m-5 lg:m-20 py-5 text-4xl font-serif flex justify-center underline decoration-wavy decoration-green-500 underline-offset-8 text-center  decoration-2 tracking-tight text-black">Customer testimonials</div>
         
         <div className="m-5 lg:m-20 lg:text-lg">
             <Slider {...settings}>

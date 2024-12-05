@@ -5,7 +5,7 @@ import React, { useState, useEffect } from "react";
 
 // const stripePromise = loadStripe(process.env.REACT_APP_API_PUBLIC_KEY);
 
-function LoveBookingCards() {
+function ServicesCards() {
     const [showModal, setShowModal] = useState(false);
     // eslint-disable-next-line
     const [modalContent, setModalContent] = useState({
@@ -158,7 +158,7 @@ function LoveBookingCards() {
                      
             <div className="box-container flex gap-10">
       {boxes.map((box, index) => (
-        <div className="box-item bg-violet-50 rounded-lg text-black" key={index}>
+        <div className="box-item bg-green-50 rounded-lg text-black" key={index}>
           <div className="flip-box">
             <div className="">
             <div
@@ -174,7 +174,7 @@ function LoveBookingCards() {
             </div>
             
             <div
-              className="flip-box-back text-center font-serif text-black bg-[#e7ef8f]"
+              className="flip-box-back text-center font-serif text-black bg-[#e7ef8f] bgr-[#abe7c4] "
             //   style={{ backgroundColor:"#bbb"}}
             >
               <div className="inner color-white ">
@@ -324,4 +324,4 @@ function LoveBookingCards() {
     );
 }
 
-export default LoveBookingCards;
+export default ServicesCards;

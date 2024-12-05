@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import About from './About';
 import Testimonials from './Testimonials';
-import LoveBookingCards from './LoveBookingCards';
-import CareerBookingCards from './CareerBookingCards';
+import ServicesCards from './ServicesCards';
+import BookingCards from './BookingCards';
 import { motion } from "framer-motion";
 import './leaves.css';
 
@@ -49,7 +49,7 @@ const MainPage = () => {
       const isDesktop = window.matchMedia("(min-width: 768px)").matches;
       if (isDesktop && !navigator.userAgent.includes("iPhone") && !navigator.userAgent.includes("iPad")) {
         e.preventDefault();
-        window.open(`https://mail.google.com/mail/?view=cm&fs=1&to=uditi013@gmail.com`, '_blank');
+        window.open(`https://mail.google.com/mail/?view=cm&fs=1&to=ab.metconsultant@gmail.com`, '_blank');
       }
     }
   };
@@ -70,7 +70,7 @@ const MainPage = () => {
         <div className="w-[15rem] hidden lg:flex justify-center absolute top-2 left-[40rem]">
           <img src="logo.png" alt="logo" />
         </div>
-        <div className="flex justify-center navbar bg-[#dbe47c] pt-0 mt-0 min-h-0 lg:text-lg">
+        <div className="flex justify-center navbar bg-[#dbe47c] bgr-[#abe7c4] pt-0 mt-0 min-h-0 lg:text-lg">
           <div className="navbar-center hidden font-serif text-black lg:flex">
             <ul className="menu menu-horizontal text-lg px-1">
               <li><a href="#about" onClick={() => navigateTo('about')} className="block py-2 px-4">About me</a></li>
@@ -88,7 +88,7 @@ const MainPage = () => {
           </div>
         </div>
 
-        <div className="container mx-auto flex flex-wrap md:flex-nowrap pl-10 pr-10 md:pt-20 justify-center bg-[#dbe47c] rounded-bl-[70rem] rounded-br-[40rem]">
+        <div className="container mx-auto flex flex-wrap md:flex-nowrap pl-10 pr-10 md:pt-20 justify-center bg-[#dbe47c] bgr-[#abe7c4] rounded-bl-[70rem] rounded-br-[40rem]">
           <div className="pt-1 lg:pt-20 lg:pr-[10rem] lg:flex-col justify-center">
             <motion.div initial={{ y: 40 }}
               animate={{ y: 0 }}
@@ -121,9 +121,9 @@ const MainPage = () => {
           </div>
         </div>
 
-        <LoveBookingCards />
+        <ServicesCards />
         <div id="services">
-          <CareerBookingCards />
+          <BookingCards />
         </div>
         <div id="about">
           <About />
@@ -131,7 +131,19 @@ const MainPage = () => {
         <div id="testimonials">
           <Testimonials />
         </div>
-        <footer className="bg-[#dbe47c] pt-5 font-serif text-black">
+        
+        <div className='flex flex-col justify-center my-40'>
+        <div className="my-5 text-4xl tracking-tight text-black font-serif font-extralight flex justify-center underline decoration-wavy decoration-green-500 text-center  underline-offset-8 decoration-2 ">Follow My Youtube Channel</div>
+          
+          {/* <div className="flex justify-center"><div className="max-w-[50rem] text-lg text-gray-700 mx-10 my-5 text-wrap">Get a face-to-face reading with me </div></div> */}
+{/* <a href="https://www.flaticon.com/free-icons/arrows" title="arrows icons"></a> */}
+<div className="flex justify-center"> <img src="arrows.png" className="w-20" alt="arrows"/></div>
+        <div className='flex justify-center mt-10'><iframe width="1000" height="500" src="https://www.youtube.com/embed/CtFLRrUdnJg?si=tR_BTpTh65anXULa" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div></div>
+        {/* <div className='flex mb-40 justify-center'>
+          <img src="logo.png" alt="logo"/>
+        </div> */}
+        <footer className="bg-[#dbe47c] bgr-[#abe7c4] pt-5 font-serif text-black">
           <div className='w-full mx-auto max-w-screen-xl p-4 flex gap-3 items-center justify-between'>
             <div className=' mb-10 text-sm pr-10 xl:p-0'>
               <span className='font-bold'>Legal Disclaimer: </span> 
