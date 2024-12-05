@@ -158,7 +158,7 @@ function ServicesCards() {
                      
             <div className="box-container flex gap-10">
       {boxes.map((box, index) => (
-        <div className="box-item bg-green-50 rounded-lg text-black" key={index}>
+        <div className="box-item bg-purple-50 rounded-lg text-black" key={index}>
           <div className="flip-box">
             <div className="">
             <div
