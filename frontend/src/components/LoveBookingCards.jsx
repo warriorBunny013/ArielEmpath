@@ -158,11 +158,11 @@ function LoveBookingCards() {
                      
             <div className="box-container flex gap-10">
       {boxes.map((box, index) => (
-        <div className="box-item text-black" key={index}>
+        <div className="box-item bg-violet-50 rounded-lg text-black" key={index}>
           <div className="flip-box">
             <div className="">
             <div
-              className="flip-box-front text-center bg-cover h-20"
+              className="flip-box-front bg-white text-center bg-cover h-20"
               style={{ backgroundImage: `url(${box.backgroundImage})`,  backgroundSize: "contain",
               backgroundRepeat: "no-repeat", // Prevents tiling
               backgroundPosition: "center", // Centers the image in the box
