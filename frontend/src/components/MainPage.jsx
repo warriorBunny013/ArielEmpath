@@ -84,7 +84,7 @@ const MainPage = () => {
             ))}
           </div>
           <div className="navbar-end hidden lg:flex mr-10">
-            <a href="mailto:uditi013@gmail.com" onClick={handleContactClick} className="btn border-0 text-white font-serif font-extralight">Contact me</a>
+            <a href="mailto:ab.metconsultant@gmail.com" onClick={handleContactClick} className="btn border-0 text-white font-serif font-extralight">Contact me</a>
           </div>
         </div>
 
@@ -143,7 +143,7 @@ const MainPage = () => {
         {/* <div className='flex mb-40 justify-center'>
           <img src="logo.png" alt="logo"/>
         </div> */}
-        <footer className="bg-[#dbe47c] bg-green-200  pt-5 font-serif text-black">
+        <footer className="bgr-[#dbe47c] bg-green-200  pt-5 font-serif text-black">
           <div className='w-full mx-auto max-w-screen-xl p-4 flex gap-3 items-center justify-between'>
             <div className=' mb-10 text-sm pr-10 xl:p-0'>
               <span className='font-bold'>Legal Disclaimer: </span> 
@@ -160,14 +160,14 @@ All sales are final.
 Please feel free to contact me for any questions or concerns
             </div>
           </div>
-           <div className="bg-[#dbe47c] flex  justify-center md:hidden">
+           <div className="bgr-[#dbe47c] bg-green-200 flex  justify-center md:hidden">
               <img src='logo.png' className='w-[12rem] pb-6' alt='logo'/>
             </div>
           <div className="w-full mx-auto max-w-screen-xl p-4 md:flex gap-3 md:items-center md:justify-between">
           <span className="text-sm text-wrap">© 2024, Ariel Baham <br/> <span className="hover:underline">ConsultationsByAriel™</span>. All Rights Reserved.</span>
               <ul className="md:flex hidden text-sm md:ml-auto items-center glass-head">
                 <li><a href="#about" onClick={() => navigateTo('about')} className="hover:underline me-4 cursor-pointer md:me-6 block py-2 px-4 ">About</a></li>
-                <li><a href="mailto:uditi013@gmail.com" onClick={handleContactClick} className="hover:underline me-4 cursor-pointer md:me-6 block py-2 px-4 ">Contact</a></li>
+                <li><a href="mailto:ab.metconsultant@gmail.com" onClick={handleContactClick} className="hover:underline me-4 cursor-pointer md:me-6 block py-2 px-4 ">Contact</a></li>
                 <li><a href="#services" onClick={() => navigateTo('services')} className="hover:underline me-4 cursor-pointer md:me-6 block py-2 px-4 ">Services</a></li>
                 <li><a href="#testimonials" onClick={() => navigateTo('testimonials')} className="hover:underline me-4 cursor-pointer md:me-6 block py-2 px-4 ">Testimonials</a></li>
               </ul>
