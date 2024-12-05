@@ -158,7 +158,7 @@ function ServicesCards() {
                      
             <div className="box-container flex gap-10">
       {boxes.map((box, index) => (
-        <div className="box-item bg-purple-100 rounded-lg text-black" key={index}>
+        <div className="box-item hover:bg-purple-100 p-2 rounded-lg text-black" key={index}>
           <div className="flip-box">
             <div className="">
             <div
@@ -177,7 +177,7 @@ function ServicesCards() {
               className="flip-box-back text-center font-serif text-black bgr-[#e7ef8f] bgr-[#abe7c4] bg-green-200  "
             //   style={{ backgroundColor:"#bbb"}}
             >
-              <div className="inner color-white ">
+              <div className="inner color-white">
                 <h3 className="flip-box-header text-3xl text-black">{box.title}</h3>
                 <div className="text-black mx-14 pt-5  text-[1rem]">{box.description}</div>
                 <button className="flip-box-button hover:bg-black hover:text-white hover:ease-in text-[0.8rem] duration-300"
