@@ -70,7 +70,7 @@ const MainPage = () => {
         <div className="w-[15rem] hidden lg:flex justify-center absolute top-2 left-[40rem]">
           <img src="logo.png" alt="logo" />
         </div>
-        <div className="flex justify-center navbar bg-[#dbe47c] bgr-[#abe7c4] pt-0 mt-0 min-h-0 lg:text-lg">
+        <div className="flex justify-center navbar bg-green-200  pt-0 mt-0 min-h-0 lg:text-lg">
           <div className="navbar-center hidden font-serif text-black lg:flex">
             <ul className="menu menu-horizontal text-lg px-1">
               <li><a href="#about" onClick={() => navigateTo('about')} className="block py-2 px-4">About me</a></li>
@@ -88,7 +88,7 @@ const MainPage = () => {
           </div>
         </div>
 
-        <div className="container mx-auto flex flex-wrap md:flex-nowrap pl-10 pr-10 md:pt-20 justify-center bg-[#dbe47c] bgr-[#abe7c4] rounded-bl-[70rem] rounded-br-[40rem]">
+        <div className="container mx-auto flex flex-wrap md:flex-nowrap pl-10 pr-10 md:pt-20 justify-center bgr-[#dbe47c] bg-green-200 rounded-bl-[70rem] rounded-br-[40rem]">
           <div className="pt-1 lg:pt-20 lg:pr-[10rem] lg:flex-col justify-center">
             <motion.div initial={{ y: 40 }}
               animate={{ y: 0 }}
@@ -143,7 +143,7 @@ const MainPage = () => {
         {/* <div className='flex mb-40 justify-center'>
           <img src="logo.png" alt="logo"/>
         </div> */}
-        <footer className="bg-[#dbe47c] bgr-[#abe7c4] pt-5 font-serif text-black">
+        <footer className="bg-[#dbe47c] bg-green-200  pt-5 font-serif text-black">
           <div className='w-full mx-auto max-w-screen-xl p-4 flex gap-3 items-center justify-between'>
             <div className=' mb-10 text-sm pr-10 xl:p-0'>
               <span className='font-bold'>Legal Disclaimer: </span> 

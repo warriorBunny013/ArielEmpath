@@ -11,7 +11,7 @@ function About(){
   // };
 
     return (<><div
-       className='pt-40 pl-5 pr-5 lg:px-40 flex font-serif bg-[#dbe47c] bgr-[#abe7c4] pb-10 mt-20 rounded-t-full justify-center'>
+       className='pt-40 pl-5 pr-5 lg:px-40 flex font-serif bgr-[#dbe47c] bg-green-200  pb-10 mt-20 rounded-t-full justify-center'>
        
     <div
      initial={{ opacity: 0, y: 100 }}
