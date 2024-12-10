@@ -156,7 +156,7 @@ function ServicesCards() {
               
                    
                      
-            <div className="box-container flex gap-10">
+            <div className="box-container max-w-[19rem] md:max-w-[100rem] flex md:gap-10">
       {boxes.map((box, index) => (
         <div className="box-item hover:bg-purple-100 p-2 rounded-lg text-black" key={index}>
           <div className="flip-box">
@@ -178,8 +178,8 @@ function ServicesCards() {
             //   style={{ backgroundColor:"#bbb"}}
             >
               <div className="inner color-white">
-                <h3 className="flip-box-header text-3xl text-black">{box.title}</h3>
-                <div className="text-black mx-14 pt-5  text-[1rem]">{box.description}</div>
+                <h3 className="flip-box-header text-2xl md:text-3xl text-black">{box.title}</h3>
+                <div className="text-black mx-14 md:pt-5 pt-3  text-[1rem]">{box.description}</div>
                 <button className="flip-box-button hover:bg-black hover:text-white hover:ease-in text-[0.8rem] duration-300"
                 onClick={() => (window.location.href = "#services")}
                 >{box.buttonText}</button>

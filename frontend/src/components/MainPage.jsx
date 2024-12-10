@@ -84,16 +84,52 @@ const MainPage = () => {
             ))}
           </div>
           <div className="navbar-end hidden lg:flex mr-10">
-            <a href="mailto:ab.metconsultant@gmail.com" onClick={handleContactClick} className="btn border-0 text-white font-serif font-extralight">Contact me</a>
+            <a href="mailto:ab.metconsultant@gmail.com" onClick={handleContactClick} className="btn rounded-md border-0 text-white font-serif px-5 font-extralight">Contact Me</a>
           </div>
         </div>
+        <div className="pb-10 bg-green-200">
+  {/* Sticky Navbar for Mobile */}
+  <div className="navbar-center glass-head mx-2 sticky top-0 z-50 font-serif rounded-md text-black md:hidden bg-green-200 shadow-md">
+    <ul className="menu menu-horizontal flex justify-center text-sm px-1">
+      <li>
+        <a
+          href="#about"
+          onClick={() => navigateTo('about')}
+          className="block py-2 px-4 hover:text-green-600 transition-colors"
+        >
+          About me
+        </a>
+      </li>
+      <li>
+        <a
+          href="#services"
+          onClick={() => navigateTo('services')}
+          className="block py-2 px-4 hover:text-green-600 transition-colors"
+        >
+          Services
+        </a>
+      </li>
+      <li>
+        <a
+          href="#testimonials"
+          onClick={() => navigateTo('testimonials')}
+          className="block py-2 px-4 hover:text-green-600 transition-colors"
+        >
+          Testimonials
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
 
-        <div className="container mx-auto flex flex-wrap md:flex-nowrap pl-10 pr-10 md:pt-20 justify-center bgr-[#dbe47c] bg-green-200 rounded-bl-[70rem] rounded-br-[40rem]">
+        
+
+        <div className="container mx-auto flex flex-wrap md:flex-nowrap pl-10 pr-10 md:pt-20 justify-center bgr-[#dbe47c] bg-green-200 rounded-bl-[30rem] rounded-br-[15rem]">
           <div className="pt-1 lg:pt-20 lg:pr-[10rem] lg:flex-col justify-center">
             <motion.div initial={{ y: 40 }}
               animate={{ y: 0 }}
               transition={{ delay: 0.3, type: "spring", stiffness: 100 }}
-              className="font-serif text-black mr-10 font-medium text-4xl leading-10 xl:text-5xl mb-4">
+              className="font-serif text-black mr-10 font-medium  text-4xl leading-10 xl:text-5xl mb-4">
               Need <span className="text-purple-600 rounded-top-xl">Clarity</span> on Love <br />Career, or Life Choices?
             </motion.div>
             <motion.div initial={{ y: 20 }}
@@ -120,8 +156,10 @@ const MainPage = () => {
             <img src="homepage.png" alt="hero" onLoad={handleImageLoad} />
           </div>
         </div>
-
+        <div className='flex flex-wrap justify-center'>
         <ServicesCards />
+        </div>
+       
         <div id="services">
           <BookingCards />
         </div>

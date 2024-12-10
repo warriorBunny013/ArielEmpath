@@ -152,9 +152,9 @@ function BookingCards() {
     return (
         <>
         <div className="flex-wrap font-serif">
-            <div className="mt-20 m-5 lg:ml-20 text-4xl tracking-tight text-black font-serif font-extralight flex justify-center underline decoration-wavy decoration-green-500 underline-offset-8 decoration-2 ">Phone Readings</div>
+            <div className="mt-20 m-5 lg:ml-20 text-3xl md:text-4xl tracking-tight text-black font-serif font-extralight flex justify-center underline decoration-wavy decoration-green-500 underline-offset-8 decoration-2 ">Phone Readings</div>
           
-            <div className="flex justify-center"><div className="max-w-[50rem] text-lg text-gray-700 mx-10 my-5 text-wrap">Need to talk with a live reader? Get a reading with me over the phone where I use a combination of tarot, intuitive downloads, and sidereal astrology.
+            <div className="flex justify-center"><div className="max-w-[50rem] text-md md:text-lg text-gray-700 mx-10 my-2 md:my-5 text-wrap">Need to talk with a live reader? Get a reading with me over the phone where I use a combination of tarot, intuitive downloads, and sidereal astrology.
 
 Book a 30-minute, 45-minute, or 1-hour time slot.</div></div>
   {/* <a href="https://www.flaticon.com/free-icons/arrows" title="arrows icons"></a> */}
@@ -459,9 +459,9 @@ Book a 30-minute, 45-minute, or 1-hour time slot.</div></div>
             
         </div>
         <div className="flex-wrap font-serif">
-            <div className="mt-20 m-5 lg:ml-20 text-4xl tracking-tight text-black font-serif font-extralight flex justify-center text-center underline decoration-wavy decoration-green-500 underline-offset-8  decoration-2 ">Live Video Readings</div>
+            <div className="mt-20 m-5 lg:ml-20 text-3xl md:text-4xl tracking-tight text-black font-serif font-extralight flex justify-center text-center underline decoration-wavy decoration-green-500 underline-offset-8  decoration-2 ">Live Video Readings</div>
           
-            <div className="flex justify-center"><div className="max-w-[50rem] text-lg text-gray-700 mx-10 my-5 text-wrap">Get a face-to-face reading with me through Google Meet where I use a combination of tarot, intuitive downloads, and sidereal astrology.
+            <div className="flex justify-center"><div className="max-w-[50rem] text-md md:text-lg text-gray-700 mx-10 my-2 md:my-5 text-wrap">Get a face-to-face reading with me through Google Meet where I use a combination of tarot, intuitive downloads, and sidereal astrology.
 
 Book a 30-minute, 45-minute, or 1-hour time slot.</div></div>
   {/* <a href="https://www.flaticon.com/free-icons/arrows" title="arrows icons"></a> */}

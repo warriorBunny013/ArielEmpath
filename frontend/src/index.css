@@ -85,12 +85,13 @@ body{
 /* Ariel */
 
 .glass-head{
-  background: rgba( 255, 255, 255, 0.15 );
-box-shadow: 0 8px 100px 0 rgba( 31, 38, 135, 0.37 );
-backdrop-filter: blur( 1px );
--webkit-backdrop-filter: blur( 1px );
-border-radius: 10px;
-border: 1px solid rgba( 255, 255, 255, 0.18 );
+/* From https://css.glass */
+background: rgba(255, 255, 255, 0.24);
+/* border-radius: 16px; */
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(9.9px);
+-webkit-backdrop-filter: blur(9.9px);
+border: 1px solid rgba(255, 255, 255, 0.45);
 
 }
 
