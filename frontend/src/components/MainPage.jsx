@@ -157,7 +157,7 @@ const MainPage = () => {
           </div>
         </div>
         <div className='flex flex-wrap justify-center'>
-        <ServicesCards />
+        <ServicesCards onLoad={handleImageLoad} />
         </div>
        
         <div id="services">
